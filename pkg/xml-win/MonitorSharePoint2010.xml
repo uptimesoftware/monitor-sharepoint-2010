@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc" xmlns="http://www.uptimesoftware.com/erdc/erdc" xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0" target_grouping="other">
+	<class>SharePoint 2010</class>
+	<exec>com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner</exec>
+	<elements>
+		<element name="process" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value>scripts/MonitorSharePoint2010/sharepoint2010-monitor.bat</default_value>
+			<short_description>Script Name</short_description>
+			<long_description>Name of the script/binary/process to be executed by up.time </long_description>
+			<validation_rule><alphanumeric/></validation_rule>
+			<error_message><alphanumeric>required field</alphanumeric></error_message>
+			<gui_type><string/></gui_type>
+		</element>
+		<element name='USERNAME' parameter_type='input' data_type='string' gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<validation_rule/><error_message/>
+			<short_description>Username</short_description>
+			<long_description>Username</long_description>
+			<gui_type><string/></gui_type>
+		</element>
+		<element name='PASSWORD' parameter_type='input' data_type='string' gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<validation_rule/><error_message/>
+			<short_description>Password</short_description>
+			<long_description>Password</long_description>
+			<gui_type><password/></gui_type>
+		</element>
+		<element name='RequestsActive' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Requests Active</short_description>
+			<long_description>Requests Active</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type><integer/></gui_type>
+		</element>
+		<element name='RequestsQueued' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Requests Queued</short_description>
+			<long_description>Requests Queued</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type><integer/></gui_type>
+		</element>
+		<element name='RequestsTimedoutTotal' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Requests Timed out Total</short_description>
+			<long_description>Requests Timed out Total</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type><integer/></gui_type>
+		</element>
+		<element name='ActiveQueueLength' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Active Queue Length</short_description>
+			<long_description>Active Queue Length</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type><integer/></gui_type>
+		</element>
+		<element name='IdleThreads' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Idle Threads</short_description>
+			<long_description>Idle Threads</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type><integer/></gui_type>
+		</element>
+		<element name='ThreadsAccessingNetwork' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Threads Accessing Network</short_description>
+			<long_description>Threads Accessing Network</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type><integer/></gui_type>
+		</element>
+		<element name='FilteringThreads' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Filtering Threads</short_description>
+			<long_description>Filtering Threads</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type><integer/></gui_type>
+		</element>
+		<element name='ThreadsInPlugins' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Threads In Plug-Ins</short_description>
+			<long_description>Threads In Plug-Ins</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type><integer/></gui_type>
+		</element>
+		<element name='Crawlsinprogress' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Crawls in progress</short_description>
+			<long_description>Crawls in progress</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type><integer/></gui_type>
+		</element>
+	</elements>
+	<help>When running a custom script check, note that the second parameter is always the name of the assigned host. The script that's executed should output each variable on it's own line, otherwise up.time won't be able to capture the appropriate information.</help>
+</uptime>
+
+
+
+
