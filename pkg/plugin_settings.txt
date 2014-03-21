@@ -1,8 +1,0 @@
-name=SharePoint Monitor 2010
-version=1.0
-platforms=windows
-description=Allows the ability to monitor Microsoft SharePoint 2010 performance.
-requiresAgentScript=false
-restartCore=false
-onUpgradeRemoveFiles=true
-onUpgradeRemoveMonitors=false

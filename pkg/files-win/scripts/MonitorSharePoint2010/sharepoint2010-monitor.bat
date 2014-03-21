@@ -1,2 +1,2 @@
 @ECHO OFF
-cscript /nologo sharepoint2010-monitor.vbs
+cscript /nologo ..\..\plugins\scripts\MonitorSharePoint2010\sharepoint2010-monitor.vbs
