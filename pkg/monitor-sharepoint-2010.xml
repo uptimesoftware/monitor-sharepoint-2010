@@ -14,7 +14,7 @@
 	<elements>
 		<element name="process_windows" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
 			<control_options> size:40 </control_options>
-			<default_value>plugins/scripts/MonitorSharePoint2010/sharepoint2010-monitor.bat</default_value>
+			<default_value>plugins/scripts/monitor-sharepoint-2010/sharepoint2010-monitor.bat</default_value>
 			<short_description>Script Name</short_description>
 			<long_description>Name of the script/binary/process to be executed by up.time </long_description>
 			<validation_rule><alphanumeric/></validation_rule>
