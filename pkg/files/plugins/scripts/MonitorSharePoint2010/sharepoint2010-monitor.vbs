@@ -20,7 +20,7 @@ End If
 
 Set colItems = objSWbemServices.ExecQuery("SELECT * FROM Win32_PerfFormattedData_MicrosoftWindowsSharePointMicrosoftSharePointFoundation4_SandboxedCodeProcessPool", "WQL", wbemFlagReturnImmediately)
 
-if colItems is Nothing Then
+if colItems is Nothing or colItems.Count = 0 Then
 	WScript.Echo "Unable to SharePoint Performance Metrics via WMI"
 	WScript.Quit 1
 End If
@@ -35,7 +35,7 @@ END IF
 
 Set colItems = objSWbemServices.ExecQuery("SELECT * FROM Win32_PerfFormattedData_MicrosoftWindowsSharePointMicrosoftSharePointFoundation4_SharePointFoundationSearchGatherer", "WQL", wbemFlagReturnImmediately)
 
-if colItems is Nothing Then
+if colItems is Nothing or colItems.Count = 0 Then
 	WScript.Echo "Unable to SharePoint Performance Metrics via WMI"
 	WScript.Quit 1
 End If
@@ -52,7 +52,7 @@ END IF
 
 Set colItems = objSWbemServices.ExecQuery("SELECT * FROM Win32_PerfFormattedData_MicrosoftWindowsSharePointMicrosoftSharePointFoundation4_SharePointFoundationSearchGathererProjects", "WQL", wbemFlagReturnImmediately)
 
-if colItems is Nothing Then
+if colItems is Nothing or colItems.Count = 0 Then
 	WScript.Echo "Unable to SharePoint Performance Metrics via WMI"
 	WScript.Quit 1
 End If
