@@ -9,6 +9,7 @@ plugin
 
 ### Version Compatibility
 
+* SharePoint 2010 Monitor 1.1 - 7.3
 * SharePoint 2010 Monitor 1.0 - 7.2, 7.1, 7.0, 6.0
   
 
@@ -18,7 +19,7 @@ This plugin monitors the performance of SharePoint 2010 and newer. This is only 
 
 ### Supported Monitoring Stations
 
-7.2, 7.1, 7.0, 6.0
+7.3, 7.2, 7.1, 7.0, 6.0
 
 ### Supported Agents: None
 
