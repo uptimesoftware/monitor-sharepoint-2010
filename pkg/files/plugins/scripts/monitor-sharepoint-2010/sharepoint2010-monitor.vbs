@@ -21,8 +21,8 @@ End If
 Set colItems = objSWbemServices.ExecQuery("SELECT * FROM Win32_PerfFormattedData_MicrosoftWindowsSharePointMicrosoftSharePointFoundation4_SandboxedCodeProcessPool", "WQL", wbemFlagReturnImmediately)
 
 if colItems is Nothing or colItems.Count = 0 Then
-	WScript.Echo "Unable to SharePoint Performance Metrics via WMI"
-	WScript.Quit 1
+	WScript.Echo "WMI Query against Win32_PerfFormattedData_MicrosoftWindowsSharePointMicrosoftSharePointFoundation4_SandboxedCodeProcessPool failed to return results. Is this an app server only with no web server?"
+'	WScript.Quit 1
 End If
 
 IF colItems.Count <> 0 THEN
@@ -36,8 +36,8 @@ END IF
 Set colItems = objSWbemServices.ExecQuery("SELECT * FROM Win32_PerfFormattedData_MicrosoftWindowsSharePointMicrosoftSharePointFoundation4_SharePointFoundationSearchGatherer", "WQL", wbemFlagReturnImmediately)
 
 if colItems is Nothing or colItems.Count = 0 Then
-	WScript.Echo "Unable to SharePoint Performance Metrics via WMI"
-	WScript.Quit 1
+	WScript.Echo "WMI Query against Win32_PerfFormattedData_MicrosoftWindowsSharePointMicrosoftSharePointFoundation4_SharePointFoundationSearchGatherer failed to return results. "
+'	WScript.Quit 1
 End If
 
 IF colItems.Count <> 0 THEN
@@ -53,8 +53,8 @@ END IF
 Set colItems = objSWbemServices.ExecQuery("SELECT * FROM Win32_PerfFormattedData_MicrosoftWindowsSharePointMicrosoftSharePointFoundation4_SharePointFoundationSearchGathererProjects", "WQL", wbemFlagReturnImmediately)
 
 if colItems is Nothing or colItems.Count = 0 Then
-	WScript.Echo "Unable to SharePoint Performance Metrics via WMI"
-	WScript.Quit 1
+	WScript.Echo "WMI Query against Win32_PerfFormattedData_MicrosoftWindowsSharePointMicrosoftSharePointFoundation4_SharePointFoundationSearchGathererProjects failed to return results. "
+'	WScript.Quit 1
 End If
 
 IF colItems.Count <> 0 THEN
