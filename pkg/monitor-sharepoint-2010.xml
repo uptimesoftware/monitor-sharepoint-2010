@@ -6,7 +6,7 @@
 	<category>Applications - General</category>
     <category_related>Applications - Web Services</category_related>
     <grid_info>
-        <supported_versions>7.3,7.4,7.5,7.6</supported_versions>
+        <supported_versions>7.3,7.4,7.5,7.6,7.7</supported_versions>
         <supported_platforms>windows</supported_platforms>
         <upgrade_in_place>true</upgrade_in_place>
         <requires_agent_scripts>false</requires_agent_scripts>
@@ -40,6 +40,7 @@
 		<element name='RequestsActive' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
+			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Requests Active</short_description>
 			<long_description>Requests Active</long_description>
 			<validation_rule/>
@@ -49,6 +50,7 @@
 		<element name='RequestsQueued' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
+			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Requests Queued</short_description>
 			<long_description>Requests Queued</long_description>
 			<validation_rule/>
@@ -58,6 +60,7 @@
 		<element name='RequestsTimedoutTotal' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
+			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Requests Timed out Total</short_description>
 			<long_description>Requests Timed out Total</long_description>
 			<validation_rule/>
@@ -67,6 +70,7 @@
 		<element name='ActiveQueueLength' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
+			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Active Queue Length</short_description>
 			<long_description>Active Queue Length</long_description>
 			<validation_rule/>
@@ -76,6 +80,7 @@
 		<element name='IdleThreads' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
+			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Idle Threads</short_description>
 			<long_description>Idle Threads</long_description>
 			<validation_rule/>
@@ -85,6 +90,7 @@
 		<element name='ThreadsAccessingNetwork' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
+			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Threads Accessing Network</short_description>
 			<long_description>Threads Accessing Network</long_description>
 			<validation_rule/>
@@ -94,6 +100,7 @@
 		<element name='FilteringThreads' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
+			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Filtering Threads</short_description>
 			<long_description>Filtering Threads</long_description>
 			<validation_rule/>
@@ -103,6 +110,7 @@
 		<element name='ThreadsInPlugins' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
+			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Threads In Plug-Ins</short_description>
 			<long_description>Threads In Plug-Ins</long_description>
 			<validation_rule/>
@@ -112,6 +120,7 @@
 		<element name='Crawlsinprogress' parameter_type='output' data_type='integer' gui_basic='' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
+			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Crawls in progress</short_description>
 			<long_description>Crawls in progress</long_description>
 			<validation_rule/>
